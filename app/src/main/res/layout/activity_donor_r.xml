@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/liner_back"
+    tools:context=".edit_prof">
+
+
+  <ImageView
+      android:id="@+id/edit"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:padding="3dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="15dp"
+      android:src="@drawable/baseline_keyboard_double_arrow_left_24" />
+
+  <ImageView
+      android:layout_width="200dp"
+      android:layout_height="200dp"
+      android:layout_gravity="center"
+      android:layout_marginTop="0dp"
+      android:background="@color/ash"
+      android:src="@drawable/donor2"/>
+
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="30dp"
+      app:cardCornerRadius="30dp"
+      app:cardElevation="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:padding="24dp"
+        android:background="@drawable/custom_edittext">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/blood_donor_in_rathnapura_district"
+          android:fontFamily="@font/timesbold"
+          android:textSize="20sp"
+          android:textAlignment="center"
+          android:textStyle="bold"
+          android:textColor="@color/black"/>
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:id="@+id/editName1"
+          android:background="@drawable/custom_edittext"
+          android:layout_marginTop="20dp"
+          android:padding="8dp"
+          android:text="@string/naveen_kodikara"
+          android:drawableStart="@drawable/baseline_person_pin_24"
+          android:drawableEnd="@drawable/baseline_local_phone_24"
+          android:drawablePadding="8dp"
+          android:textColor="@color/black"/>
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:id="@+id/editName2"
+          android:background="@drawable/custom_edittext"
+          android:layout_marginTop="20dp"
+          android:padding="8dp"
+          android:text="@string/d_r_mala"
+          android:drawableStart="@drawable/baseline_person_pin_24"
+          android:drawableEnd="@drawable/baseline_local_phone_24"
+          android:drawablePadding="8dp"
+          android:textColor="@color/black"/>
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:id="@+id/editName3"
+          android:background="@drawable/custom_edittext"
+          android:layout_marginTop="20dp"
+          android:padding="8dp"
+          android:text="@string/g_n_k_premarathna"
+          android:drawableStart="@drawable/baseline_person_pin_24"
+          android:drawableEnd="@drawable/baseline_local_phone_24"
+          android:drawablePadding="8dp"
+          android:textColor="@color/black"/>
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:id="@+id/editName4"
+          android:background="@drawable/custom_edittext"
+          android:layout_marginTop="20dp"
+          android:padding="8dp"
+          android:text="@string/hasadara_sandamini"
+          android:drawableStart="@drawable/baseline_person_pin_24"
+          android:drawableEnd="@drawable/baseline_local_phone_24"
+          android:drawablePadding="8dp"
+          android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+  </androidx.cardview.widget.CardView>
+</LinearLayout>

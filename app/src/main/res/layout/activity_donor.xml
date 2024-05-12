@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/liner_back"
+    tools:context=".donor">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="serif"
+            android:text="@string/division"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txt"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/btn_dropdown" />
+
+        <ImageView
+            android:id="@+id/backd"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="681dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blood_donors_in_sri_lanka"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/timesbold"
+            android:textColor="#D51515"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="500dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:id="@+id/imd"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="50dp"
+                    android:scaleType="fitXY"
+                    android:padding="8dp"
+                    android:src="@drawable/men1" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="200dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#65FFFCFC">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/senesh_sathsara"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/timesnewroman"
+                            android:textSize="20sp"
+                            android:textStyle="bold"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#65FFFCFC">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="60dp"
+                            android:padding="12dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/star" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="90dp"
+                            android:text="@string/best_donor_in_rathnapura_district"
+                            android:textColor="@color/black"
+                            android:fontFamily="serif"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#65FFFCFC">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:padding="14dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/baseline_location_on_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="50dp"
+                            android:fontFamily="serif"
+                            android:text="@string/no_234_akkara_500_embilipitiya"
+                            android:textColor="#5219B6"
+                            android:textSize="17sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#65FFFCFC">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:padding="14dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/baseline_local_phone_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="50dp"
+                            android:text="@string/_947_0_141_53_65"
+                            android:textColor="@color/teal_200"
+                            android:fontFamily="@font/timesnewroman"
+                            android:textSize="17sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#65FFFCFC">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:padding="14dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/drop" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="90dp"
+                            android:text="@string/blood_drop_is_o"
+                            android:textColor="@color/black"
+                            android:fontFamily="serif"
+                            android:textSize="17sp" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="500dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="50dp"
+                    android:scaleType="fitXY"
+                    android:padding="8dp"
+                    android:src="@drawable/women2" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="200dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#65FFFCFC">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/kaveesha_nethmi"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/timesnewroman"
+                            android:textSize="20sp"
+                            android:textStyle="bold"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#65FFFCFC">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="60dp"
+                            android:padding="14dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/star" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="95dp"
+                            android:text="@string/best_donor_in_colombo_district"
+                            android:textColor="@color/black"
+                            android:fontFamily="serif"
+                            android:textSize="17sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#65FFFCFC">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:padding="14dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/baseline_location_on_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="50dp"
+                            android:fontFamily="serif"
+                            android:text="@string/n0_250_kekirideniya_lane_hewagama_kaduwela"
+                            android:textColor="#5219B6"
+                            android:textSize="17sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#65FFFCFC">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:padding="14dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/baseline_local_phone_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="50dp"
+                            android:text="@string/_947_0_145_52_65"
+                            android:textColor="@color/teal_200"
+                            android:fontFamily="serif"
+                            android:textSize="17sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#65FFFCFC">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:padding="14dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/drop" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="90dp"
+                            android:text="@string/blood_drop_is_a"
+                            android:textColor="@color/black"
+                            android:fontFamily="serif"
+                            android:textSize="17sp" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="500dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="50dp"
+                    android:scaleType="fitXY"
+                    android:padding="8dp"
+                    android:src="@drawable/women3" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="200dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#65FFFCFC">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/thamasha_sewmini"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/timesnewroman"
+                            android:textSize="20sp"
+                            android:textStyle="bold"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#65FFFCFC">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="60dp"
+                            android:padding="14dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/star" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="95dp"
+                            android:text="@string/best_donor_in_galle_district"
+                            android:textColor="@color/black"
+                            android:fontFamily="serif"
+                            android:textSize="17sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#65FFFCFC">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:padding="14dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/baseline_location_on_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="50dp"
+                            android:fontFamily="serif"
+                            android:text="@string/no_215_gamagewaththa_galle"
+                            android:textColor="#5219B6"
+                            android:textSize="17sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#65FFFCFC">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:padding="14dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/baseline_local_phone_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="50dp"
+                            android:text="@string/_947_7_141_78_69"
+                            android:textColor="@color/teal_200"
+                            android:fontFamily="serif"
+                            android:textSize="17sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#65FFFCFC">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:padding="14dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/drop"
+                            android:contentDescription="@string/todo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="90dp"
+                            android:text="@string/blood_drop_is_ab"
+                            android:textColor="@color/black"
+                            android:fontFamily="serif"
+                            android:textSize="17sp" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

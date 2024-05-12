@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/onboarding"
+    tools:context=".onboarding1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C4201D1D"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/bsjoihy"
+            android:text="Welcome to BloodCare !"
+            android:textColor="#D2D7DF"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="300dp"
+            android:fontFamily="@font/timesbold"
+            android:text="Whether you're here to donate or seeking assistance, our intuitive platform makes it easy to make a difference ;"
+            android:textColor="#BA1153"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="500dp"
+            android:fontFamily="@font/timesbold"
+            android:text="Let's work together to ensure no one faces the challenge of blood shortage alone ..."
+            android:textColor="#8E0A24"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="600dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/arrow" />
+
+    </RelativeLayout>
+</RelativeLayout>

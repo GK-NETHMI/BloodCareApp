@@ -1,0 +1,29 @@
+  <resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BLOODCARE" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/lavender</item>
+        <item name="colorPrimaryVariant">@color/lavender</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/red</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowAnimationStyle">@style/Theme.BLOODCARE</item>
+    </style>
+
+    <style name="Theme.BLOODCARE" parent="Base.Theme.BLOODCARE" >
+      <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+      <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+    </style>
+
+      <style name="settingSwitch" parent="Theme.AppCompat.Light">
+          <item name="colorControlActivated">@color/lavender</item>
+          <item name="colorSwitchThumbNormal">@color/white</item>
+          <item name="android:colorForeground">@color/black</item>
+      </style>
+
+</resources>
